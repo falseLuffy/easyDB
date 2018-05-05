@@ -4,6 +4,7 @@
   "description": "**一个关于indexDB 简化api的故事。** 之前懒得写api用法，现在发现自己也快忘了怎么用le,还是需要把api用法不上，不能懒了",
   "main": "index.js",
   "dependencies": {
+    "css-loader": "^0.28.11",
     "webpack-cli": "^2.1.2"
   },
   "devDependencies": {},

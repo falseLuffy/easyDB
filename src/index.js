@@ -1,3 +1,4 @@
+
 export default function easyDB(dbName,storeName, version) {
   this.db_Name = dbName;
   this.db_version = version;
@@ -11,13 +12,15 @@ export default function easyDB(dbName,storeName, version) {
   this.indexedDB = window.indexedDB || window.msIndexedDB || window.mozIndexedDB || window.webkitIndexedDB;
 }
 
+
+
 easyDB.prototype._open = function () {
   this.promise = new Promise(function (resolve, reject) {
     var request = this.indexedDB.open(this.db_Name, this.db_version);
     request.onerror = function (e) {
       console.log('error');
     }
-    request.onsuccess = function (e) {
+    request.onsuccess = function(e) {
       this.db = e.target.result;
       resolve();
     }.bind(this);

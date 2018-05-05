@@ -1,1 +1,1 @@
-**一个关于indexDBde 简化api的故事。**
+**一个关于indexDB 简化api的故事。**

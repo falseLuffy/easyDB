@@ -2,10 +2,7 @@ module.exports = {
     mode: 'production',
     module:{
         rules:[
-            {
-                test:'/\.test\.loader$/',
-                use:'shit-loader'
-            }
+            {test:/\.loader$/,loader:'shit-loader'}
         ]
     }
 }
